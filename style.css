@@ -5,9 +5,9 @@
     width:300px;
     margin:0 auto
   }
-.p1_1{
-    color: rgb(255, 0, 0);
-}
 .teach_for{
     float: right;
+}
+.count{
+    color:rgb(255, 0, 0);
 }
