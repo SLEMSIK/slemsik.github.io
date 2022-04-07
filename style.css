@@ -1,0 +1,13 @@
+.z1 {
+    position:absolute;
+    left:0;
+    right:0;
+    width:300px;
+    margin:0 auto
+  }
+.p1_1{
+    color: rgb(255, 0, 0);
+}
+.teach_for{
+    float: right;
+}
