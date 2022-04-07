@@ -1,4 +1,4 @@
-var i;
+var count = 0;
 var button = document.querySelector(".b1");
   button.addEventListener("click", function() {
     var name = document.querySelector(".i1").value;
@@ -13,7 +13,7 @@ var button = document.querySelector(".b1");
     }
 })
 function olimp(){
-    //document.querySelector(".b1").disabled = true; 
+    document.querySelector(".b1").disabled = true; 
     var c1 = Math.round(Math.random()*4 + 1)
     var c2 = Math.round(Math.random()*4 + 1)
     var c3 = Math.round(Math.random()*4 + 1)
@@ -40,12 +40,12 @@ function olimp(){
         }
         if(name == "В"){
             console.log("В")
-            i++
+            document.querySelector(".count").innerHTML="Правельных ответов: 1";
+            var q =1;
         }
         if(name == "Г"){
             console.log("Г")
         }
-        
       })
     } 
     if(c1 == 2){
@@ -59,7 +59,9 @@ function olimp(){
         }
         if(name == "Б"){
             console.log("Б")
-            i++
+            count = count + 1
+            document.querySelector(".count").innerHTML="Правельных ответов: 1";
+            var q =1;
         }
         if(name == "В"){
             console.log("В")
@@ -73,8 +75,9 @@ function olimp(){
         button.addEventListener("click", function() {
           var name = document.querySelector(".i2").value;
           if(name == "А"){
-            console.log("A")
-            i++
+            console.log("A");
+            document.querySelector(".count").innerHTML="Правельных ответов: 1";
+            var q =1;
         }
         if(name == "Б"){
             console.log("Б")
@@ -126,7 +129,8 @@ function olimp(){
         }
         if(name == "Б"){
             console.log("Б")
-            i++
+            document.querySelector(".count").innerHTML="Правельных ответов: 1";
+            var q =1;
         }
         if(name == "В"){
             console.log("В")
@@ -139,7 +143,7 @@ function olimp(){
     //2 вопрос
 
     if(c2 == 1){
-        document.querySelector(".p2_1").innerHTML="2.Предками русских, украинцев и белорусов были:";
+        document.querySelector(".p2_1").innerHTML="2.Объезд князем и его дружины своих владений с осени до  весны:";
         document.querySelector(".p2_2").innerHTML="А) полюдье  Б) обход В) повоз Г) ополчение";
 
         var button = document.querySelector(".b3");
@@ -591,7 +595,7 @@ function olimp(){
     } 
     if(c5 == 5){
         document.querySelector(".p5_1").innerHTML="5.Ниже приведен перечень терминов. Все они, за исключением одного, обозначают занятия восточных славян. Найдите и укажите термин, выпадающий из этого ряда.";
-        document.querySelector(".p5_3").innerHTML="А) Земледелие  Б) кочевое скотоводство В) охота Г) ремесло Д) рыболовство";
+        document.querySelector(".p5_2").innerHTML="А) Земледелие  Б) кочевое скотоводство В) охота Г) ремесло Д) рыболовство";
         var button = document.querySelector(".b6");
         button.addEventListener("click", function() {
           var name = document.querySelector(".i6").value;
