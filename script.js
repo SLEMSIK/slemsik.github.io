@@ -27,24 +27,24 @@ function olimp(){
     //1 вопрос
     if(c1 == 1){
         document.querySelector(".p1_1").innerHTML="1.Предками русских, украинцев и белорусов были:";
-        document.querySelector(".p1_2").innerHTML="А) франки Б) германцы В) восточные славяне Г) южные славяне";
+        document.querySelector(".p1_2").innerHTML="1) франки 2) германцы 3) восточные славяне 4) южные славяне";
 
         var button = document.querySelector(".b2");
         button.addEventListener("click", function() {
           var name = document.querySelector(".i2").value;
-          if(name == "А"){
-            console.log("A")
+          if(name == "1"){
+            console.log("1")
         }
-        if(name == "Б"){
-            console.log("Б")
+        if(name == "2"){
+            console.log("2")
         }
-        if(name == "В"){
-            console.log("В")
+        if(name == "3"){
+            console.log("3")
             document.querySelector(".count").innerHTML="Правельных ответов: 1";
             var q =1;
         }
-        if(name == "Г"){
-            console.log("Г")
+        if(name == "4"){
+            console.log("4")
         }
       })
     } 
